@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather & Map</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    
+    <!-- Include Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+    <!-- Include Leaflet JavaScript -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+    <!-- Include your custom JavaScript file -->
+    <script defer src="main_2.js"></script>
+</head>
+
+<body>
+    <div class="card">
+        <div class="search">
+            <input type="text" placeholder="Enter city name" spellcheck="false">
+            <button><img src="images/search.png" alt="Search"></button>
+        </div>
+      
+        <div class="weather">
+            <img src="images/rain.png" class="weather-icon" alt="Weather Icon">
+            <h1 class="temp">22°C</h1>
+            <h2 class="city">Canada</h2>
+        </div>
+
+        <div class="details">
+            <div class="col">
+                <img src="images/windanimated.gif" alt="Humidity">
+                <div>
+                    <p class="humidity">50%</p>
+                    <p>Humidity</p>
+                </div>
+            </div>
+            <div class="col">
+                <img src="images/wind.png" alt="Wind Speed">
+                <div>
+                    <p class="wind">18 km/h</p>
+                    <p>Wind Speed</p>
+                </div>
+            </div>
+        </div>
+        <div class="timezone"></div>
+
+        <div id="map" class="map"></div> <!-- Make sure to change class "map" to id "map" -->
+        
+    </div>
+</body>
+
+</html>
